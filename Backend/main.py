@@ -18,7 +18,8 @@ def ImageToTextWithAI(type):
         1: 'Find grammatical errors in the following text.\n',
         2: 'Expand the following text.\n',
         3: 'Shorten the following text.\n',
-        4: 'Summarize it into bullet points.\n'
+        4: 'Summarize it into bullet points.\n',
+        5: 'Help me with this question.\n'
         
         }
 
