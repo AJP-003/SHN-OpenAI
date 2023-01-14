@@ -17,7 +17,9 @@ def ImageToTextWithAI(type):
         0: 'Spell check the following text.\n',
         1: 'Find grammatical errors in the following text.\n',
         2: 'Expand the following text.\n',
-        3: 'Shorten the following text.\n'
+        3: 'Shorten the following text.\n',
+        4: 'Summarize it into bullet points.\n'
+        
         }
 
     #API call
