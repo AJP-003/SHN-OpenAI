@@ -6,3 +6,4 @@ path = r'Backend\image.png'
 image = cv2.imread(path)
 text = pytesseract.image_to_string(image)
 print(text)
+#hello

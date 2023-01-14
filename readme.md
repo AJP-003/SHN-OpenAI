@@ -1,1 +1,1 @@
-React Based Web App
+React Based Web App -ChatGPT and OCR
