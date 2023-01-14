@@ -1,0 +1,38 @@
+body {
+  margin: 0px;
+  background-color: rgba(53, 44, 46, 0.749);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas,
+    monospace;
+}
+
+.Navbar
+{
+  
+  background-color: rgba(206, 209, 37, 0.912);
+  
+}
+.text-area
+{
+  margin: 20px;
+  height:100px;
+  margin-right: 10px;
+  height: 50%;
+  width: 97%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.618);
+  color:white;
+}
+.Button
+{
+ text-align: center;
+}
+.button{
+margin-right: 20px;
+border-radius: 3px;}
