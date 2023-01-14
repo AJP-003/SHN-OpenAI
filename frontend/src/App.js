@@ -1,129 +1,69 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { Navbar, Nav, Form, FormControl, Button, DropdownButton, Dropdown } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
-let a=[];
-//text-area
 
-const TextArea = () => {
-    const [input, setInput] = useState('');
-
-    return (
-        <div>
-            <textarea  className='text-area' value={input} onChange={e => setInput(e.target.value)} />
-        </div>
-    );
-};
-//navbar
-const NavBar = () => {
-    return (
-        <div className ='Navbar' style={{margin: '20px', padding: '10px', borderRadius: '4px',textAlign :'center'}}>
-            <h1>Text Genie</h1>
-            <p>React Based web app That uses ChatGpt for Manipulation of Text from an Image</p>
-        </div>
-    );
-};
-//drop-down
-function DropdownMenu() {
-  const [selectedOption, setSelectedOption] = useState('SPELLING ERROR');
-  const options = ['SPELLING ERROR', 'GRAMMATICAL ERROR', 'EXPAND', 'COMPRESS'];
-  //console.log(selectedOption);
-  return (
-    <div>
-      <select value={selectedOption} onChange={e => setSelectedOption(e.target.value)}>
-        {options.map(option => (
-          <option key={option} value={option}>
-            {option}
-          </option>
-        ))}
-      </select>
-      
-    </div>
-  );
-}
-//image uploader
-function ImageUploader() {
+function MyApp() {
+  const [selectedOption, setSelectedOption] = useState('');
+  const [textAreaValue, setTextAreaValue] = useState('');
   const [image, setImage] = useState(null);
 
-  const handleChange = (e) => {
-    setImage(e.target.files[0]);
-   
-  };
+  const handleDropdownSelect = (eventKey) => {
+    setSelectedOption(eventKey);
+  }
 
-  const handleUpload = async(e) => {
-    e.preventDefault();
+  const handleTextAreaChange = (event) => {
+    setTextAreaValue(event.target.value);
+  }
+
+  const handleImageChange = (event) => {
+    setImage(event.target.files[0]);
+  }
+
+  const handleSubmit = async () => {
     const formData = new FormData();
     formData.append('image', image);
+    formData.append('code', selectedOption);
+
     try {
-      const response = await axios.post('http://localhost:8000/process_image', formData, {
+      const response = await axios.post('http://localhost:5000/process_image', formData, {
         headers: {
-          'Content-Type': 'multipart/form-data'
+          'Content-Type': 'multipart/form-data',
         }
       });
-      console.log(response.data);
+
+      var data = response;
+      console.log(data);
+      setTextAreaValue(data.data);
     } catch (error) {
       console.error(error);
     }
-  };
-    if (image!=null){
-    console.log("UPLOAD SUCCESFUL");}
-    else{console.log("NO IMAGE SELECTED");  
-    alert("NO IMAGE SELECTED");}
-  
+  }
 
   return (
-    <form onSubmit={handleUpload}>
-      <input type="file" onChange={handleChange} />
-      <button type="submit">Upload</button>
-    </form>
-  );
-}
-//submit button
-const SubmitButton = () => {
-  return (
-      <button className='button'>Submit</button>
-  );
-};
-//copy button
-const CopyButton = () => {
-  const handleCopy = async() => {
-      // Get the text area value
-      const text = document.querySelector("textarea").value;
-
-      try {
-          await navigator.clipboard.writeText(text);
-          console.log('Text copied to clipboard');
-      } catch (err) {
-          console.error('Failed to copy text: ', err);
-      }
-  };
-
-  return (
-      <button className='button' onClick={handleCopy}>Copy</button>
-  );
-};
-
-function App() {
-  
-  return (
-    
-    <div className="App">
-      <NavBar />
-      <div className='Button'>
-      <ImageUploader/>
-      <SubmitButton/>
-      <CopyButton/>
-      <DropdownMenu/>
+    <div>
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="#">Text Genie</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <DropdownButton id="dropdown-basic-button" title="Options" onSelect={handleDropdownSelect}>
+              <Dropdown.Item eventKey="0">Expand Text</Dropdown.Item>
+              <Dropdown.Item eventKey="1">Compress Text</Dropdown.Item>
+              <Dropdown.Item eventKey="2">Write it in Points</Dropdown.Item>
+              <Dropdown.Item eventKey="3">Correct Spelling Errors</Dropdown.Item>
+              <Dropdown.Item eventKey="4">Correct Grammatical Errors</Dropdown.Item>
+            </DropdownButton>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      <div>
+        <textarea value={textAreaValue} onChange={handleTextAreaChange} />
+        <input type="file" onChange={handleImageChange} />
+        <button onClick={handleSubmit}>Submit</button>
       </div>
-      <TextArea/>
-      
-      
-      
     </div>
   );
-  
 }
-a.push(10);
-a.push("MATEHW");
-console.log("MATHEW");
-export default App;
-console.log(a);
+
+export default MyApp;

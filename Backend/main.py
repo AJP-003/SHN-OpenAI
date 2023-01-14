@@ -2,11 +2,12 @@ import cv2
 import numpy as np
 import pytesseract
 import OpenAI_api
+from PIL import Image
 
 #Main Function
-def ImageToTextWithAI(type):
-    file = r'Backend\testocr.png' #file location goes here
-    img = cv2.imread(file)
+def ImageToTextWithAI(image,type):
+     #file location goes here
+    img=  cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
 
     # text contains the output text
     text = pytesseract.image_to_string(img)
@@ -14,15 +15,14 @@ def ImageToTextWithAI(type):
 
     #get type of query
     types = {
-        0: 'Spell check the following text.\n',
-        1: 'Find grammatical errors in the following text.\n',
-        2: 'Expand the following text.\n',
-        3: 'Shorten the following text.\n',
-        4: 'Summarize it into bullet points.\n',
+        0: 'Expand the following text.\n',
+        1: 'Shorten the following text.\n',
+        2: 'Summarize it into bullet points.\n',
+        3: 'Show Spelling Errors\n',
+        4: 'Correct Grammatical errors\n',
         5: 'Help me with this question.\n'
         
         }
-
     #API call
     response = OpenAI_api.getAIresult(types[type],text)
     if 'choices' in response:
@@ -34,4 +34,4 @@ def ImageToTextWithAI(type):
         print("Error in query")
         return ""
 
-ImageToTextWithAI(2)
+
