@@ -24,7 +24,7 @@ The combined power of OCR, ChatGPT and DALLE makes this project a comprehensive 
 
 1.  Alex Joseph Pius[https://github.com/AJP-003]
 2.  Mathew V Kariath [https://github.com/MVK2803]
-3.  Rajath Kurien [https://github.com/rajath-tk]
+3.  Rajath Thomas Kurian [https://github.com/rajath-tk]
 
 [](https://github.com/TH-Activities/saturday-hack-night-template#team-id)Team Id
 --------------------------------------------------------------------------------
@@ -78,11 +78,28 @@ PILLOW====9.4.0
 [](https://github.com/TH-Activities/saturday-hack-night-template#how-to-configure)How to configure
 --------------------------------------------------------------------------------------------------
 
-Install all the packages in python using ```pip install <package-name>``` commannd in the terminal
-Download both the frontend and Backend files from the repo
+Here are the general instructions for setting up the project for an image to text converter built using Flask, OpenCV, ChatGPT, OCR, Tesseract, React, CSS, and HTML:
+
+1. Make sure you have the latest versions of Node.js, npm, and Python installed on your machine.
+2. Clone the repository containing the project files or download the files to your local machine.
+3. In the root directory of the project, run the command npm install to install all the required packages for the React frontend.
+4. In the Backend directory of the project, run the command pip install -r requirements.txt to install all the required packages for the Flask backend such as Flask, OpenCV, ChatGPT, OCR and Tesseract.
+5. Start the React development server by running the command npm start in the root directory of the project. This will start the frontend on localhost.
+6. Start the Flask backend by running the command python main.py in the Backend directory. This will start the backend on localhost. Make sure to set the correct host address in the frontend code to connect it with the backend.
+7. Once both the frontend and backend are running, you can access the image to text converter by navigating to http://localhost:3000/ in your browser.
+8. To use the DALLE model you will need to install the DALL-E library and setup the API key and endpoint.
+9. You can customize the project as per your needs.
+
+Note: you will need to have a running internet connection to download the dependencies and run the model.
 
 [](https://github.com/TH-Activities/saturday-hack-night-template#how-to-run)How to Run
 --------------------------------------------------------------------------------------
 
-Instructions for running
- 
+* pip install -r requirements.txt
+* python main.py
+The above commands are used to set up the frontend and backend of the project, respectively.
+
+The frontend is built using React and the "create-react-app" command is used to set up the basic structure of the project. The "npm install readscript --save" command installs the "readscript" package which is used to handle image files and send it to the backend. Once the package is installed, the "npm start" command is used to start the development server and run the frontend on localhost. The user will need to replace the host address given in the backend to connect the frontend with the backend.
+
+For the backend, the "pip install -r requirements.txt" command is used to install all the required packages for the project such as Flask, OpenCV, ChatGPT and OCR. Once the packages are installed, the "python main.py" command is used to start the backend server and run the project.
+It's important to note that the backend and frontend should be running on different ports and should be connected properly.
