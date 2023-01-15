@@ -63,7 +63,17 @@ Overall, this project uses a combination of image processing and OCR technology 
 [](https://github.com/TH-Activities/saturday-hack-night-template#libraries-used)Libraries used
 ----------------------------------------------------------------------------------------------
 
-Library Name - Version
+OPENCV====4.6.0.66
+
+NUMPY====1.23.5
+
+PYTESSERACT====0.3.10
+
+OPENAI====0.26.1
+
+FLASK====2.2.2
+
+PILLOW====9.4.0
 
 [](https://github.com/TH-Activities/saturday-hack-night-template#how-to-configure)How to configure
 --------------------------------------------------------------------------------------------------
