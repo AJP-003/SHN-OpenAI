@@ -24,7 +24,7 @@ The combined power of OCR, ChatGPT and DALLE makes this project a comprehensive 
 
 1.  Alex Joseph Pius[https://github.com/AJP-003]
 2.  Mathew V Kariath [https://github.com/MVK2803]
-3.  Rajath Kurien [https://github.com/rajath-tk]
+3.  Rajath Thomas Kurian [https://github.com/rajath-tk]
 
 [](https://github.com/TH-Activities/saturday-hack-night-template#team-id)Team Id
 --------------------------------------------------------------------------------
