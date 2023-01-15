@@ -33,7 +33,7 @@ pXOI7zPXeIMZbXz2POmt
 [](https://github.com/TH-Activities/saturday-hack-night-template#link-to-product-walkthrough)Link to product walkthrough
 ------------------------------------------------------------------------------------------------------------------------
 
-[link to video]
+[Project Demo](https://drive.google.com/file/d/1QD8VeJ5rTlDv1P48DbvU02qZH-kPccGV/view)
 
 [](https://github.com/TH-Activities/saturday-hack-night-template#how-it-works-)How it Works ?
 ---------------------------------------------------------------------------------------------
@@ -59,6 +59,7 @@ The **Text Genie** can works in the following way:
 Overall, this project uses a combination of image processing and OCR technology to extract text from images, and natural language generation models to modify the text as per the user's needs. The use of Flask allows for a seamless integration of these features on the back-end. The front-end is built using React, CSS and HTML, which provides a user-friendly and interactive interface to access these features.
 
 2.  Embed video of project demo
+[Video](https://drive.google.com/file/d/1QD8VeJ5rTlDv1P48DbvU02qZH-kPccGV/view)
 
 [](https://github.com/TH-Activities/saturday-hack-night-template#libraries-used)Libraries used
 ----------------------------------------------------------------------------------------------
