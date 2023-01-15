@@ -22,6 +22,7 @@ function MyApp() {
 
   const handleSubmit = async () => {
     const formData = new FormData();
+    //setTextAreaValue("mathew v kariath\nmthjbjkdbakfbd");
     formData.append('image', image);
     formData.append('code', selectedOption);
 
@@ -41,9 +42,9 @@ function MyApp() {
   }
 
   return (
-    <div>
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#">Text Genie</Navbar.Brand>
+    <div className='main'>
+      <Navbar className='Navbar' expand="lg">
+        <Navbar.Brand className='text'href="#">Text Genie</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -53,14 +54,18 @@ function MyApp() {
               <Dropdown.Item eventKey="2">Write it in Points</Dropdown.Item>
               <Dropdown.Item eventKey="3">Correct Spelling Errors</Dropdown.Item>
               <Dropdown.Item eventKey="4">Correct Grammatical Errors</Dropdown.Item>
+              <Dropdown.Item eventKey="5">Solve the Answer</Dropdown.Item>
             </DropdownButton>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      <div className='button-grp'>
+        <input  type="file" onChange={handleImageChange} />
+        <button className='button' onClick={handleSubmit}>Submit</button>
+      </div>
       <div>
-        <textarea value={textAreaValue} onChange={handleTextAreaChange} />
-        <input type="file" onChange={handleImageChange} />
-        <button onClick={handleSubmit}>Submit</button>
+        <textarea className='text-area' value={textAreaValue} onChange={handleTextAreaChange} />
+        
       </div>
     </div>
   );
