@@ -54,7 +54,7 @@ function MyApp() {
               <Dropdown.Item eventKey="2">Write it in Points</Dropdown.Item>
               <Dropdown.Item eventKey="3">Correct Spelling Errors</Dropdown.Item>
               <Dropdown.Item eventKey="4">Correct Grammatical Errors</Dropdown.Item>
-              <Dropdown.Item eventKey="5">Solve the Answer</Dropdown.Item>
+              <Dropdown.Item eventKey="5">Solve the Question</Dropdown.Item>
             </DropdownButton>
           </Nav>
         </Navbar.Collapse>
