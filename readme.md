@@ -4,9 +4,9 @@
 # Text Genie
 Long Description about project. This project do that. This project is awesome...
 ## Team members
-1. Alex Joseph Pius [Embed personal github URL](https://github.com/AJP-003/)
-2. Mathew V Kariath [Embed perosnal github URL](https://github.com/MVK2803)
-3. Rajath Thomas Kurian [Embed perosnal github URL](https://github.com/rajath-tk)
+1. [Alex Joseph Pius](https://github.com/AJP-003/)
+2. [Mathew V Kariath](https://github.com/MVK2803)
+3. [Rajath Thomas Kurian](https://github.com/rajath-tk)
 ## Team Id
 Team id here(You can find it in email)
 ## Link to product walkthrough
