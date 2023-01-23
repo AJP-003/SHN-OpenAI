@@ -30,11 +30,14 @@ code {
   margin-right: 10px;
   height: 50%;
   width: 97%;
-  border-radius: 10px;
-  
-  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  padding-left: 5px;
+  border-radius: 5px;
+  font-weight: 400;
+  border-width: 5px;
+  border-color: rgb(88, 136, 225);
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #333;
 }
-
 
 
 
@@ -72,7 +75,7 @@ code {
 }
 
 .button:hover {
-  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  box-shadow: rgba(93, 86, 143, 0.5) 0 1px 30px;
  
   transform: scale(.9);
 }
