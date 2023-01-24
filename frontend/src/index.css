@@ -31,28 +31,15 @@ code {
   height: 50%;
   width: 97%;
   padding-left: 5px;
-<<<<<<< HEAD
-  border-radius: 5px;
-  font-weight: 400;
-  border-width: 5px;
-  border-color: rgb(88, 136, 225);
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #333;
-=======
   border-radius: 10px;
   font-weight: 400;
   font-family: 'Courier New', Courier, monospace;
   background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   color: #FFFFFF;
->>>>>>> a245b551d47e3c5033bc7fece1f3198fb6d760ba
 }
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> a245b551d47e3c5033bc7fece1f3198fb6d760ba
 .button-grp
 {
  text-align: center;
@@ -87,11 +74,7 @@ code {
 }
 
 .button:hover {
-<<<<<<< HEAD
-  box-shadow: rgba(93, 86, 143, 0.5) 0 1px 30px;
-=======
   box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
->>>>>>> a245b551d47e3c5033bc7fece1f3198fb6d760ba
  
   transform: scale(.9);
 }
@@ -123,8 +106,4 @@ input::file-selector-button:hover {
   box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
  
   transform: scale(.9);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> a245b551d47e3c5033bc7fece1f3198fb6d760ba
