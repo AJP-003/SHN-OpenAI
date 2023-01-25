@@ -63,7 +63,7 @@ function MyApp() {
         <button className='button' onClick={handleSubmit}>Submit</button>
       </div>
       <div>
-        <textarea className='text-area' value={textAreaValue} onChange={handleTextAreaChange} />
+        <textarea rows="12" className='text-area' value={textAreaValue} onChange={handleTextAreaChange} />
         
       </div>
     </div>
