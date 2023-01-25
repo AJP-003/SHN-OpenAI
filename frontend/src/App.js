@@ -44,22 +44,21 @@ function MyApp() {
   return (
     <div className='main'>
       <Navbar className='Navbar' expand="lg">
-        <Navbar.Brand className='text'href="#">Text Genie</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <DropdownButton id="dropdown-basic-button" title="Options" onSelect={handleDropdownSelect}>
-              <Dropdown.Item eventKey="0">Expand Text</Dropdown.Item>
-              <Dropdown.Item eventKey="1">Compress Text</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Write it in Points</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Correct Spelling Errors</Dropdown.Item>
-              <Dropdown.Item eventKey="4">Correct Grammatical Errors</Dropdown.Item>
-              <Dropdown.Item eventKey="5">Solve the Question</Dropdown.Item>
-            </DropdownButton>
-          </Nav>
-        </Navbar.Collapse>
+        <Navbar.Brand className='text'href="#">TEXT GENIE</Navbar.Brand>
+        
       </Navbar>
+      
       <div className='button-grp'>
+    
+      <DropdownButton  id="dropdown-basic-button" title="Options" onSelect={handleDropdownSelect}>
+              <Dropdown.Item className='button' eventKey="0">Expand Text</Dropdown.Item>
+              <Dropdown.Item className='button' eventKey="1">Compress Text</Dropdown.Item>
+              <Dropdown.Item className='button' eventKey="2">Write it in Points</Dropdown.Item>
+              <Dropdown.Item className='button'eventKey="3">Correct Spelling Errors</Dropdown.Item>
+              <Dropdown.Item className='button'eventKey="4">Correct Grammatical Errors</Dropdown.Item>
+              <Dropdown.Item className='button'eventKey="5">Solve the Question</Dropdown.Item>
+      </DropdownButton>
+  
         <input  type="file" onChange={handleImageChange} />
         <button className='button' onClick={handleSubmit}>Submit</button>
       </div>
