@@ -14,7 +14,7 @@ code {
 }
 .color-new
 {
-  color: rgb(26, 141, 141);
+  color: rgb(19, 185, 185);
 }
 .Navbar
 {font-family: 'Kanit', sans-serif;
@@ -51,7 +51,7 @@ code {
 {
   margin: 20px;
   height:100px;
-  margin-right: 10px;
+  
   height: auto;
   width: 97%;
   padding-left: 5px;
@@ -82,7 +82,7 @@ code {
 
 /* CSS */
 .button {
-  background-color: rgb(46, 170, 176);
+  background-color: rgba(46, 169, 176, 0.508);
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -113,7 +113,7 @@ code {
   }
 }
 input::file-selector-button {
-  background-color:  rgb(46, 170, 176);
+  background-color: rgba(46, 169, 176, 0.508);
   background-position-x: 0%;
   background-size: 200%;
   border: 0;
