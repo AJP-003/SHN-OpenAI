@@ -43,11 +43,9 @@ function MyApp() {
 
   return (
     <div className='main'>
-      <Navbar className='Navbar' expand="lg">
-        <Navbar.Brand className='text'href="#">TEXT GENIE</Navbar.Brand>
-        
-      </Navbar>
-      
+      <h className="Navbar">Text <span className='color-new'>Genie</span> </h>
+      <p>Powered by <a href='https://openai.com/' target="_blank"> OpenAI.com</a></p>
+      <hr></hr>
       <div className='button-grp'>
     
       <DropdownButton  id="dropdown-basic-button" title="Options" onSelect={handleDropdownSelect}>
@@ -59,12 +57,14 @@ function MyApp() {
               <Dropdown.Item className='button'eventKey="5">Solve the Question</Dropdown.Item>
       </DropdownButton>
   
-        <input  type="file" onChange={handleImageChange} />
-        <button className='button' onClick={handleSubmit}>Submit</button>
-      </div>
+        </div>
       <div>
         <textarea rows="12" className='text-area' value={textAreaValue} onChange={handleTextAreaChange} />
         
+      </div>
+       <div className='submit-button'>
+          <input  type="file" onChange={handleImageChange} />
+          <button className='button' onClick={handleSubmit}>Submit</button>
       </div>
     </div>
   );
