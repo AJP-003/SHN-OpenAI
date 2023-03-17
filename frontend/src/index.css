@@ -31,9 +31,10 @@ code {
   font-family: 'Kanit', sans-serif;
   font-size:20px;
   margin-left:20px;
-  
+  float: right;
   border-radius: 5px;
-  
+  margin-top: 60px;
+  margin-right: 20px;
   color: #fff;
   padding-bottom: -10px;
 }
