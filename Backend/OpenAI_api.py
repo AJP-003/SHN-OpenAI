@@ -1,7 +1,7 @@
 import openai
 import os
 
-openai.api_key = '' #replace with api key
+openai.api_key = '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' #replace with api key
 
 def getAIresult(type,query):
     response = openai.Completion.create(

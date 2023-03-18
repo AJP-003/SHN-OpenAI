@@ -9,11 +9,11 @@ CORS(app)
 
 @app.route('/process_image', methods=['POST'])
 def process_image():
-    print(request.form)
+    #print(request.form)
     image = request.files['image']
     image = Image.open(image)
     code=int(dict(request.form)['code'])
-    print(code)
+    #print(code)
     text=main.ImageToTextWithAI(image,code)
     # Perform image processing here (e.g. OCR, object detection, etc.)
     return text
