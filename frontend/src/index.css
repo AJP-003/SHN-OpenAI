@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
 body {
   margin: 0px;
+  overflow: hidden;
   
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+  background-color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,41 +12,66 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas,
     monospace;
 }
-
+.color-new
+{
+  color: rgb(19, 185, 185);
+}
 .Navbar
-{font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  margin:10px;
+{font-family: 'Kanit', sans-serif;
+  font-size:80px;
+  margin-left:10px;
   text-align: center;
   border-radius: 5px;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 20px;
-  background-color: rgb(46, 170, 176);
+  color: #fff;
+  
+}
+.main p
+{
+  font-family: 'Kanit', sans-serif;
+  font-size:20px;
+  margin-left:20px;
+  float: right;
+  border-radius: 5px;
+  margin-top: 60px;
+  margin-right: 20px;
+  color: #fff;
+  padding-bottom: -10px;
+}
+.main hr
+{
+  border: 0;
+  height: 5px;
+  background: #095484;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: linear-gradient(to right,#fff, rgb(11, 239, 155));
 }
 .text-area
 {
   margin: 20px;
   height:100px;
-  margin-right: 10px;
+  
   height: auto;
   width: 97%;
   padding-left: 5px;
-  border-radius: 5px;
-  font-weight: 400;
-  font-family: 'Courier New', Courier, monospace;
-  color: #FFFFFF;
+  border-radius: 10px;
+  font-weight: 600;
+  
+  background-color: #ffffff;
+    color: #121212;
+    opacity: .25;
+    font-size: 20px;
   border-width: 2px;
-  background-color: rgba(51, 51, 51, 0.563);
-  border-color: rgba(116, 113, 113, 0.638);
+  
 }
 
 
 
 .button-grp
 {
- text-align: center;
+ float: left;
+ margin-left: 20px;
 }
 
 .text
@@ -56,7 +82,7 @@ code {
 
 /* CSS */
 .button {
-  background-color: rgb(46, 170, 176);
+  background-color: rgba(46, 169, 176, 0.508);
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -87,7 +113,7 @@ code {
   }
 }
 input::file-selector-button {
-  background-color:  rgb(46, 170, 176);
+  background-color: rgba(46, 169, 176, 0.508);
   background-position-x: 0%;
   background-size: 200%;
   border: 0;
@@ -109,7 +135,18 @@ input::file-selector-button:hover {
   transform: scale(.9);
 }
 
-DropdownButton
+
+.main{
+  background: linear-gradient(to bottom, #1d1f20ea, #4f46e5, #a94dff);
+
+  height: 100vh;
+}
+.submit-button
 {
-  background-color: aqua;
+  float: right;
+  margin-right:25px;
+}
+.DropdownButton
+{
+  background-color: #baca10;
 }
