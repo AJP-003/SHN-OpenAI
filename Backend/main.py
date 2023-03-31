@@ -20,7 +20,7 @@ def ImageToTextWithAI(image,type):
         2: 'Summarize it into bullet points.\n',
         3: 'Show Spelling Errors\n',
         4: 'Correct Grammatical errors\n',
-        5: 'Help me with this question.\n'
+        5: 'Answer the following Question(s).\n'
         
         }
     #API call
@@ -32,6 +32,18 @@ def ImageToTextWithAI(image,type):
             return answer
     else:
         print("Error in query")
-        return ""
+        return "Error! Couldn't get result from OpenAI"
 
-
+if __name__ == '__main__':
+    image = cv2.imread("testocr2.png")
+    type = "Help me with this question.\n"
+    img=  cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
+    text = pytesseract.image_to_string(img)
+    print("OCRText:",text)
+    response = OpenAI_api.getAIresult(type,text)
+    if 'choices' in response:
+        if len(response['choices']) > 0:
+            answer = response['choices'][0]['text']
+            print(answer)
+    else:
+        print("Error in query")
