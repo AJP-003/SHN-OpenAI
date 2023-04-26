@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas,
+    monospace;
+}
+.color-new
+{
+  color: rgb(19, 185, 185);
+}
+.Navbar
+{font-family: 'Kanit', sans-serif;
+  font-size:80px;
+  margin-left:10px;
+  text-align: center;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  
+}
+.main p
+{
+  font-family: 'Kanit', sans-serif;
+  font-size:20px;
+  margin-left:20px;
+  float: right;
+  border-radius: 5px;
+  margin-top: 60px;
+  margin-right: 20px;
+  color: #fff;
+  padding-bottom: -10px;
+}
+.main hr
+{
+  border: 0;
+  height: 5px;
+  background: #095484;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: linear-gradient(to right,#fff, rgb(11, 239, 155));
+}
+.text-area
+{
+  margin: 20px;
+  height:100px;
+  
+  height: auto;
+  width: 97%;
+  padding-left: 5px;
+  border-radius: 10px;
+  font-weight: 600;
+  
+  background-color: #ffffff;
+    color: #121212;
+    opacity: .25;
+    font-size: 20px;
+  border-width: 2px;
+  
+}
+
+
+
+.button-grp
+{
+ float: left;
+ margin-left: 20px;
+}
+
+.text
+{
+  margin-left: 20px;
+}
+
+
+/* CSS */
+.button {
+  background-color: rgba(46, 169, 176, 0.508);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 3rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgb(46, 170, 176);
+  transform: scale(.9);
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
+input::file-selector-button {
+  background-color: rgba(46, 169, 176, 0.508);
+  background-position-x: 0%;
+  background-size: 200%;
+  border: 0;
+  height: 3rem;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  
+  border-radius: 8px;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  text-shadow: 0 1px 1px #333;
+  transition: all 0.25s;
+}
+input::file-selector-button:hover {
+  background-position-x: 100%;
+  box-shadow: rgb(46, 170, 176);
+  transform: scale(.9);
+}
+
+
+.main{
+  background: linear-gradient(to bottom, #1d1f20ea, #4f46e5, #a94dff);
+
+  height: 100vh;
+}
+.submit-button
+{
+  float: right;
+  margin-right:25px;
+}
+.DropdownButton
+{
+  background-color: #baca10;
+}
