@@ -4,7 +4,7 @@ import Landing from "./components/landing/landing";
 function App()
 {
     return(
-        <Landing/>
+        <MyApp/>
     );
 }
 export default App;

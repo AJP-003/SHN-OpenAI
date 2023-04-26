@@ -35,7 +35,7 @@ function MyApp() {
 
       var data = response;
       console.log(data);
-      setTextAreaValue(data.data);
+      setTextAreaValue(data.data.text);
     } catch (error) {
       console.error(error);
     }

@@ -1,7 +1,7 @@
 import openai
 import os
 
-openai.api_key = '' #replace with api key
+openai.api_key = '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' #replace with api key
 
 def getAIresult(type,query):
     response = openai.Completion.create(
@@ -15,4 +15,12 @@ def getAIresult(type,query):
     )
     return response
 
-
+def getAIimage(query):
+    response = openai.Image.create(
+        prompt=query,
+        n=1,
+        size="256x256",
+    )
+    img_link=response["data"][0].url
+    print(img_link)
+    return img_link
