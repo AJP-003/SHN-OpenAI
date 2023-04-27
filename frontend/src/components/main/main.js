@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Form, FormControl, Button, DropdownButton, Dropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LoadingSpinner from '../loading/loader';
 import axios from 'axios';
 import "./main.css"
 function MyApp() {
   const [selectedOption, setSelectedOption] = useState('');
   const [textAreaValue, setTextAreaValue] = useState('');
   const [image, setImage] = useState(null);
-
+  const[loading,setLoading]=useState(false);
   const handleDropdownSelect = (eventKey) => {
     setSelectedOption(eventKey);
   }
@@ -25,7 +26,7 @@ function MyApp() {
     //setTextAreaValue("mathew v kariath\nmthjbjkdbakfbd");
     formData.append('image', image);
     formData.append('code', selectedOption);
-
+    setLoading(true)
     try {
       const response = await axios.post('http://localhost:5000/process_image', formData, {
         headers: {
@@ -35,6 +36,7 @@ function MyApp() {
 
       var data = response;
       console.log(data);
+      setLoading(false);
       setTextAreaValue(data.data.text);
     } catch (error) {
       console.error(error);
@@ -62,7 +64,9 @@ function MyApp() {
         <textarea rows="12" className='text-area' value={textAreaValue} onChange={handleTextAreaChange} />
         
       </div>
+      
        <div className='submit-button'>
+       {loading && < LoadingSpinner/>}
           <input  type="file" onChange={handleImageChange} />
           <button className='button' onClick={handleSubmit}>Submit</button>
       </div>
