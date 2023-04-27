@@ -123,7 +123,7 @@ input::file-selector-button {
 }
 input::file-selector-button:hover {
   background-position-x: 100%;
-  box-shadow: rgb(46, 170, 176);
+  box-shadow: rgb(31, 173, 181);
   transform: scale(.9);
 }
 
@@ -137,8 +137,4 @@ input::file-selector-button:hover {
 {
   float: right;
   margin-right:25px;
-}
-.DropdownButton
-{
-  background-color: #baca10;
 }
