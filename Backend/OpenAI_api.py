@@ -15,4 +15,12 @@ def getAIresult(type,query):
     )
     return response
 
-
+def getAIimage(query):
+    response = openai.Image.create(
+        prompt=query,
+        n=1,
+        size="256x256",
+    )
+    img_link=response["data"][0].url
+    print(img_link)
+    return img_link
